@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favi.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Custom Link Maker</title>
+</head>
+
+<body>
+  <header>
+    <div class="heading-logo">
+      <img id="logo" src="images/logo.png" alt="logo">
+      <h1 id="heading">Custom Link Maker</h1>
+    </div>
+    <p>Enter any URL and unique custom name, <br>then a custom link will be created which when is clicked will redirect to original URL</p>
+    <p>Do not enter any space or special characters in custom name!</p>
+  </header>
+
+  <section id="input-section">
+    <form class="" action="/" method="post">
+      <div class="input-box">
+        <input type="text" name="inputURL" value="<%=userURL%>" placeholder="URL.." autocomplete="off" autofocus required>
+      </div>
+
+      <div class="input-box">
+        <input class="custom-input" type="text" name="inputCustomName" value="<%=userCustomName%>" placeholder="Custom name.." autocomplete="off" required>
+      </div>
+      <button type="submit"><img src="images/go.png" alt=""></button>
+
+    </form>
+  </section>
+
+  <section id="result-section">
+    <% if(custom_link!==""){ %>
+    <p>Your Custom Link : <a href="<%=custom_link%>"><%=custom_link%></a></p>
+    <% }else{ %>
+    <p><strong>Error: </strong>The custom name you've given is already used, so kindly enter a different custom name!</p>
+    <%  }%>
+  </section>
+  <hr>
+  <footer>
+    <a href="https://github.com/Shubhamrawat5/Custom-Link-Maker">Github Link</a>
+    <a href="https://github.com/Shubhamrawat5">Shubham Rawat</a>
+  </footer>
+</body>
+
+</html>

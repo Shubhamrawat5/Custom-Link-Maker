@@ -1,0 +1,142 @@
+body {
+  text-align: center;
+  font-family: 'Balsamiq Sans', cursive;
+  background-image: url('../images/bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #79431c;
+  margin: 2rem;
+  margin-top: 0;
+  height: 100vh;
+}
+
+#logo {
+  width: 110px;
+  height: 110px;
+  mix-blend-mode: darken;
+}
+
+#heading {
+  margin: 0;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+#input-section {
+  margin: 2.5rem 0 1.8rem 0;
+}
+
+.input-box {
+  margin: 15px 0;
+}
+
+input {
+  height: 2rem;
+  width: 27rem;
+  border-radius: 10px;
+  border-width: 0;
+  box-shadow: 1px 1px 2px 2px #79431c;
+  outline: none;
+  font-size: 18px;
+  font-family: inherit;
+  color: inherit;
+  padding: 4px 14px 1px 14px;
+}
+
+.custom-btn-box button {
+  width: 2rem;
+}
+
+button {
+  font-size: 0;
+  border-radius: 50%;
+  background: transparent;
+  border-width: 0;
+  outline: none;
+  margin-top: 10px;
+}
+
+button img {
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 2px #fff9f4;
+}
+
+button img:hover {
+  box-shadow: 0px 0px 3px 2px #fff70096;
+  transition: 0.2s;
+}
+
+p {
+  font-size: 18px;
+}
+
+#result-section p {
+  font-weight: 600;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #922c2c;
+  font-size: 20px;
+  margin: 5px;
+  display: block;
+}
+
+footer a:hover {
+  transform: scale(1.03);
+}
+
+hr {
+  width: 12rem;
+  height: 1px;
+  border: 0;
+  color: black;
+  background-color: #79431c;
+}
+
+@media (max-width:600px) {
+  body {
+    margin-top: 1.5rem;
+  }
+
+  hr {
+    width: 6rem;
+  }
+
+  footer a {
+    font-size: 15px;
+  }
+
+  #logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
+  }
+
+  #heading {
+    font-size: 1.8rem;
+  }
+
+  #input-section {
+    margin: 1.5rem 0 1rem 0;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  input {
+    height: 1.6rem;
+    width: 80%;
+    font-size: 15px;
+  }
+
+  button img {
+    width: 40px;
+  }
+}
