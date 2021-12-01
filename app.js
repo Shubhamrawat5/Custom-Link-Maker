@@ -66,7 +66,7 @@ const getLinkFromDB = async (name) => {
     return herokuLink;
 }
 
-const herokuLink = "https://www.testing.com"; //home link of website!
+const herokuLink = "https://linkkmakerr.herokuapp.com"; //home link of website!
 const regex = /[^A-Za-z1-9]/g; //regex to have only alphabets and numbers
 
 app.get("/", (req, res) => {
